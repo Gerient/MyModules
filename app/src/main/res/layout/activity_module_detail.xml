@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewModuleCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mc" />
+
+    <TextView
+        android:id="@+id/textViewModuleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mn" />
+
+    <TextView
+        android:id="@+id/textViewAY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ay" />
+
+    <TextView
+        android:id="@+id/textViewSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/semester" />
+
+    <TextView
+        android:id="@+id/textViewMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/module_credit" />
+
+    <TextView
+        android:id="@+id/textViewVenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/venue" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_main_page" />
+</LinearLayout>

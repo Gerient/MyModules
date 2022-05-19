@@ -7,35 +7,46 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
 
-    TextView tvC382;
-    TextView tvC322;
+    TextView tvModule1;
+    TextView tvModule2;
+    TextView tvModule3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tvC382 = findViewById(R.id.textView382);
-        tvC322 = findViewById(R.id.textView322);
+        tvModule1 = findViewById(R.id.textView382);
+        tvModule2 = findViewById(R.id.textView322);
+        tvModule3 = findViewById(R.id.textView346);
 
-        tvC382.setOnClickListener(new View.OnClickListener() {
+        tvModule1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, SecondActivity.class);
-                i.putExtra("class1", "Module Code: C382 \nModule Name: IT Service Delivery " +
-                        "\nAcademic Year: 2022 \nModule Credit: 4 \nVenue: W62B");
+                Intent i = new Intent(MainActivity.this, ModuleDetailActivity.class);
+                i.putExtra("ModuleCode", "C382");
                 startActivity(i);
             }
         });
 
-        tvC322.setOnClickListener(new View.OnClickListener() {
+        tvModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ThirdActivity.class);
-                i.putExtra("class2", "Module Code: C322 \nModule Name: Data Centre and Cloud Mgmt " +
-                        "\nAcademic Year: 2022 \nModule Credit: 4 \nVenue: W61H");
+                Intent i = new Intent(MainActivity.this, ModuleDetailActivity.class);
+                i.putExtra("ModuleCode", "C322");
+                startActivity(i);
+            }
+        });
+
+        tvModule3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, ModuleDetailActivity.class);
+                i.putExtra("ModuleCode", "C346");
                 startActivity(i);
             }
         });
